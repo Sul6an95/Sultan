@@ -195,6 +195,11 @@ export async function registerRoutes(
   app: Express
 ): Promise<Server> {
 
+  // ── Health check endpoint ───────────────────────────────────────────────────
+  app.get('/health', (_req, res) => {
+    res.json({ status: 'ok' });
+  });
+
   // ── Public routes ──────────────────────────────────────────────────────────
   app.get(api.games.list.path, async (req, res) => {
     const data = await storage.getGames();
