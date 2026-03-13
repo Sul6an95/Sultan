@@ -1,0 +1,11 @@
+[build]
+builder = "nixpacks"
+buildCommand = "npm run build"
+
+[deploy]
+startCommand = "npm run start"
+healthcheckPath = "/api/matches?date=2026-03-14"
+restartPolicyType = "on_failure"
+
+[[services]]
+name = "rivox"

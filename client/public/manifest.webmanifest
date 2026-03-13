@@ -1,0 +1,22 @@
+{
+  "name": "Rivox",
+  "short_name": "Rivox",
+  "description": "Esports matches and results tracker",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "background_color": "#0e0e14",
+  "theme_color": "#0e0e14",
+  "icons": [
+    {
+      "src": "/logo-r.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    },
+    {
+      "src": "/favicon.png",
+      "sizes": "32x32",
+      "type": "image/png"
+    }
+  ]
+}

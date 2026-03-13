@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Rivox Esports</title>
+  <style>
+    * { box-sizing: border-box; }
+    body {
+      font-family: Arial, sans-serif;
+      background: #0f172a;
+      color: white;
+      margin: 0;
+      padding: 20px;
+    }
+    h1 {
+      text-align: center;
+      margin-bottom: 24px;
+    }
+    #matches {
+      max-width: 900px;
+      margin: 0 auto;
+    }
+    .match {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      background: #1e293b;
+      padding: 16px;
+      border-radius: 14px;
+      margin-bottom: 12px;
+      gap: 10px;
+      flex-wrap: wrap;
+    }
+    .team {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      min-width: 220px;
+    }
+    .team img {
+      width: 44px;
+      height: 44px;
+      border-radius: 50%;
+      object-fit: cover;
+      background: #fff;
+      padding: 2px;
+    }
+    .game {
+      font-size: 12px;
+      color: #94a3b8;
+      margin-top: 4px;
+    }
+    .time {
+      font-weight: bold;
+      font-size: 16px;
+      padding: 8px 12px;
+      background: #334155;
+      border-radius: 999px;
+    }
+    .note {
+      text-align: center;
+      color: #94a3b8;
+      margin-top: 18px;
+      font-size: 14px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Rivox - Esports Matches</h1>
+  <div id="matches"></div>
+  <div class="note">Starter file for Replit</div>
+
+  <script>
+    const matches = [
+      {
+        game: "Mobile Legends",
+        team1: "Falcon",
+        team2: "Team Liquid",
+        logo1: "https://upload.wikimedia.org/wikipedia/en/thumb/8/86/Placeholder.svg/120px-Placeholder.svg.png",
+        logo2: "https://upload.wikimedia.org/wikipedia/en/thumb/8/86/Placeholder.svg/120px-Placeholder.svg.png",
+        time: "LIVE"
+      },
+      {
+        game: "Counter-Strike 2",
+        team1: "Natus Vincere",
+        team2: "G2 Esports",
+        logo1: "https://upload.wikimedia.org/wikipedia/en/thumb/8/86/Placeholder.svg/120px-Placeholder.svg.png",
+        logo2: "https://upload.wikimedia.org/wikipedia/en/thumb/8/86/Placeholder.svg/120px-Placeholder.svg.png",
+        time: "21:30"
+      },
+      {
+        game: "Dota 2",
+        team1: "OG",
+        team2: "PSG Quest",
+        logo1: "https://upload.wikimedia.org/wikipedia/en/thumb/8/86/Placeholder.svg/120px-Placeholder.svg.png",
+        logo2: "https://upload.wikimedia.org/wikipedia/en/thumb/8/86/Placeholder.svg/120px-Placeholder.svg.png",
+        time: "22:00"
+      },
+      {
+        game: "Valorant",
+        team1: "Sentinels",
+        team2: "Fnatic",
+        logo1: "https://upload.wikimedia.org/wikipedia/en/thumb/8/86/Placeholder.svg/120px-Placeholder.svg.png",
+        logo2: "https://upload.wikimedia.org/wikipedia/en/thumb/8/86/Placeholder.svg/120px-Placeholder.svg.png",
+        time: "23:00"
+      }
+    ];
+
+    const container = document.getElementById("matches");
+
+    matches.forEach(match => {
+      const card = document.createElement("div");
+      card.className = "match";
+      card.innerHTML = `
+        <div class="team">
+          <img src="${match.logo1}" alt="${match.team1}">
+          <div>
+            <div>${match.team1}</div>
+            <div class="game">${match.game}</div>
+          </div>
+        </div>
+
+        <div class="time">${match.time}</div>
+
+        <div class="team" style="justify-content:flex-end;">
+          <div>${match.team2}</div>
+          <img src="${match.logo2}" alt="${match.team2}">
+        </div>
+      `;
+      container.appendChild(card);
+    });
+  </script>
+</body>
+</html>

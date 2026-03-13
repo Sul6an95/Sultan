@@ -1,0 +1,98 @@
+{
+  "date": "2026-03-08",
+  "timezone": "Asia/Riyadh",
+  "matches": [
+    {
+      "game": "Valorant",
+      "tournament": "VCT Masters Santiago 2026",
+      "match": "Gentle Mates vs All Gamers",
+      "time": "20:00",
+      "stream": [
+        "https://twitch.tv/valorant",
+        "https://youtube.com/valorantesports"
+      ]
+    },
+    {
+      "game": "Valorant",
+      "tournament": "VCT Masters Santiago 2026",
+      "match": "FURIA vs BBL Esports",
+      "time": "23:00",
+      "stream": [
+        "https://twitch.tv/valorant",
+        "https://youtube.com/valorantesports"
+      ]
+    },
+    {
+      "game": "Counter Strike 2",
+      "tournament": "ESL Pro League Season 23",
+      "match": "FaZe vs Monte",
+      "time": "18:00",
+      "stream": [
+        "https://twitch.tv/esl_csgo"
+      ]
+    },
+    {
+      "game": "Counter Strike 2",
+      "tournament": "European Pro League",
+      "match": "Acend vs Nemesis",
+      "time": "15:00",
+      "stream": [
+        "https://twitch.tv"
+      ]
+    },
+    {
+      "game": "Dota 2",
+      "tournament": "PGL Wallachia Season 7",
+      "match": "Team Liquid vs Vici Gaming",
+      "time": "11:00",
+      "stream": [
+        "https://twitch.tv/pgl"
+      ]
+    },
+    {
+      "game": "League of Legends",
+      "tournament": "LPL 2026 Split 1",
+      "match": "Bilibili Gaming vs TBD",
+      "time": "12:00",
+      "stream": [
+        "https://youtube.com/lolesports"
+      ]
+    },
+    {
+      "game": "PUBG Mobile",
+      "tournament": "PMPL Indonesia Spring",
+      "match": "Match Day Games",
+      "time": "13:00",
+      "stream": [
+        "https://youtube.com/pubgmobileesports"
+      ]
+    },
+    {
+      "game": "Free Fire",
+      "tournament": "Free Fire Ramadan Cup MENA",
+      "match": "Match Day",
+      "time": "21:00",
+      "stream": [
+        "https://youtube.com/freefireesports"
+      ]
+    },
+    {
+      "game": "Rocket League",
+      "tournament": "Collegiate Rocket League Spring",
+      "match": "League Matches",
+      "time": "19:00",
+      "stream": [
+        "https://twitch.tv/rocketleague"
+      ]
+    },
+    {
+      "game": "Overwatch 2",
+      "tournament": "Overwatch Champions Series China",
+      "match": "Grand Finals Day",
+      "time": "19:00",
+      "stream": [
+        "https://youtube.com/overwatchleague"
+      ]
+    }
+  ]
+}
