@@ -2,6 +2,18 @@ import express, { type Request, Response, NextFunction } from "express";
 import { registerRoutes } from "./routes";
 import { serveStatic } from "./static";
 import { createServer } from "http";
+import { execSync } from "child_process";
+
+// Run database migrations on startup in production
+if (process.env.NODE_ENV === "production") {
+  try {
+    console.log("[DB] Running database migrations...");
+    execSync("npx drizzle-kit push --force", { stdio: "inherit" });
+    console.log("[DB] Migrations completed successfully.");
+  } catch (err) {
+    console.error("[DB] Migration failed:", err);
+  }
+}
 
 const app = express();
 const httpServer = createServer(app);
