@@ -257,6 +257,7 @@ export async function registerRoutes(
       });
       return res.json({ ok: true, id: visitor.id, visitCount: visitor.visitCount });
     } catch (err) {
+      console.error("[API] POST /api/visitors error:", err);
       return res.status(500).json({ message: "Internal server error" });
     }
   });
